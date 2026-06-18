@@ -1,6 +1,8 @@
 package andreasaderi.entities;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.Table;
 
 import java.time.LocalDate;
@@ -8,6 +10,7 @@ import java.time.LocalDate;
 @Entity
 @Table(name = "concerts")
 public class Concert extends Evento {
+    @Enumerated(EnumType.STRING)
     private ConcertGenre genre;
     private boolean isInStreaming;
 

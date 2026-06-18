@@ -40,4 +40,8 @@ public abstract class Evento {
     public String getTitle() {
         return title;
     }
+
+    public EventLocation getEventLocation() {
+        return eventLocation;
+    }
 }

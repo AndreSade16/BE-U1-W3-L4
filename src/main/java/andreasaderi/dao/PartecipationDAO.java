@@ -16,7 +16,7 @@ public class PartecipationDAO {
         transaction.begin();
         entityManager.persist(newPartecipation);
         transaction.commit();
-        System.out.println("La partecipazione di" + newPartecipation.getPerson().getName() + " " + newPartecipation.getPerson().getSurname() + " all'evento " + newPartecipation.getEvent().getTitle() + " è stata salvata sul DB.");
+        System.out.println("La partecipazione di" + newPartecipation.getPerson().getName() + " " + newPartecipation.getPerson().getSurname() + " all'evento " + newPartecipation.getEvent().getTitle() + " presso " + newPartecipation.getEvent().getEventLocation().getName() + " è stata salvata sul DB.");
     }
 
 
